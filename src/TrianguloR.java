@@ -18,7 +18,17 @@ public class TrianguloR extends Figura {
     public TrianguloR()
     {
     }
-    
+
+    public void rotar90Grados() {
+        for (int i = 0; i < 3; i++) {
+            int x = v[i].x;
+            int y = v[i].y;
+            // Aplica la rotación de 90 grados a cada vértice
+            v[i].x = y;
+            v[i].y = -x;
+        }
+    }
+
     public TrianguloR(Vertex2D v0, Vertex2D v1, Vertex2D v2, Color _color)
     {
         color = _color;        

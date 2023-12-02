@@ -24,9 +24,7 @@ public class TestMatrix {
         Matrix m = new Matrix();        
         
         m.traslacion(-3,3);        
-        m.escalar(3);
-        m.rotacion(45);
-        
+
         
         punto2 = m.pprima(punto);  //  P' = M * P
         
